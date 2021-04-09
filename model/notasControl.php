@@ -27,7 +27,8 @@ function editarNotas($identificador) {
     require_once 'notasValidacao.php';
     $query = "SELECT * FROM notas WHERE id_nota = " . $identificador;
     $dados = notasConsulta($query);
-//     print_r($dados);
+    print_r($dados);
+    require_once '../editarNotas.php';
 //     header ('Location: ../cadastrarNotas.php?id='.$identificador);
 
 }
@@ -35,7 +36,7 @@ function editarNotas($identificador) {
 if (!empty($_GET['id'])){
     $identificador = $_GET['id'];
     editarNotas($identificador);
-    include '../cadastrarNotas.php';
+//     include '../cadastrarNotas.php';
 }
 
 

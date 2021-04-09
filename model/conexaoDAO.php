@@ -26,6 +26,16 @@ class conexaoDAO
 
     function consultarNotasObjeto($query)
     {
+        //require_once 'Notas.php';
+        //$query = "select * from notas";
+        $stmt = $this->conectafuncao->query($query);
+        //$stmt = $this->conectafuncao->prepare($query);
+       // $resultado = $stmt->execute();
+        $dados = $stmt->fetchAll(PDO::FETCH_OBJ);
+        return $dados;}
+    
+    function consultarNotasObjetoA($query)
+    {
         require_once 'Notas.php';
         //$query = "select * from notas";
         $stmt = $this->conectafuncao->prepare($query);
