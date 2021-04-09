@@ -1,36 +1,36 @@
-body{
-	background-color: #f0f0f0;
-	font-family: sans-serif;
+body {
+	background-color: #f0f0f0; 		/*cor de fundo da tela, no caso é cinza*/
+	font-family: sans-serif; 		/*fonte das letras dpágina*/
 }
 
-.form{
-	width: 400px;
-	margin: auto;
-	padding-top: 40px;
+.form {
+	width: 400px; 					/*aqui é a largura do campo do formulário*/
+	margin: auto; 					/*espaçamento entre elementos*/
+	padding-top: 40px; 				/*espaçamento superior entre a borda e o conteúdo*/
 }
 
-.card{
-	box-shadow: 1px 3 px 5px #ccc;
-	background-color: white;
-	padding: 30px;
-	border-radius: 5px; 
+.card {
+	box-shadow: 1px 3px 5px #ccc; 	/*sombra da forma*/
+	background-color: white; 		/*cor de fundo da div card, no caso branco*/
+	padding: 30px; 					/*espaçamento entre borda e conteúdo*/
+	border-radius: 5px; 			/*arredondar os cantos da borda do card*/
 }
 
-.card-top{
-	text-align: center;
+.card-top { 						/*conteúdo superior contido no cartão*/
+	text-align: center; 			/*o texto é alinhado ao centro*/
 }
 
-.card-group {
+.card-group { 
 	margin-bottom: 10px;
 }
 
-.card-group >label{
+.card-group>label {
 	width: 100%;
 	color: #4F4F4F;
 	display: block;
 }
 
-.card-group > input {
+.card-group>input {
 	border-radius: 5px;
 	outline: 0;
 	width: 100%;
@@ -38,7 +38,15 @@ body{
 	padding: 5px;
 }
 
-.card-group > button{
+.card-group>textarea {
+	border-radius: 5px;
+	outline: 0;
+	width: 100%;
+	height: 25px;
+	padding: 5px;
+}
+
+.card-group>button {
 	background-image: linear-gradient(to right, #FF6347, red);
 	width: 100%;
 	border-radius: 30px;
@@ -48,16 +56,18 @@ body{
 	outline: 0;
 }
 
-.btn button:hover{
+.btn button:hover {
 	background-image: linear-gradient(to right, red, #FF6347);
 }
 
-.imglogin{
+.imglogin {
 	border-radius: 10px;
 	width: 100px;
 	box-shadow: 1px 1px 10px #ccc;
-	}
-	
-	.title{
-		color: #FF6347;
-	}
+}
+
+.title {
+	color: #FF6347;
+}
+
+

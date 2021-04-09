@@ -25,5 +25,18 @@ class ConexaoDB {
 
 }
 
+$conectar = new conexaoDB;
+$pdo = $conectar->conectar();
+$stmt = $pdo->prepare('select * from usuario');
+$stmt->execute();
+$resultado = $stmt->fetchAll();
+foreach($resultado as $key){
+        var_dump($key);
+}
+
+
+
+
+
 
 ?>
